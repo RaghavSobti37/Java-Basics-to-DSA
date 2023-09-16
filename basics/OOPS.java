@@ -113,7 +113,6 @@ public class OOPS {
     s1.age = 18;
 
     s1.printInfo(s1.name);
-    System.out.println(s1.school);
 
     Triangle t1 = new Triangle();
     t1.color = "blue";
