@@ -1,3 +1,4 @@
+package DSA;
 import java.util.Scanner;
 class sum{
     public static int sumOfNum(int n){
