@@ -1,5 +1,7 @@
-package DSA;
+// Can define a linked list as well and implement these functions
+// LinkedList<String> list = new LinkedList<>();
 
+package DSA;
 class LL {
     Node head;
     private int size;
@@ -96,6 +98,26 @@ class LL {
         System.out.print("NULL\n");
     }
 
+    public void reverse_iterate(){
+        // base case if the list is empty or has one element
+        if (head == null || head.next == null) {
+            return;
+        } 
+            Node prevNode = head;
+            Node currNode = head.next;
+            while (currNode != null) {
+                Node nextNode = currNode.next; // pointing current node to previous node
+                currNode.next = prevNode;
+
+                prevNode = currNode; // moving pointers forward
+                currNode = nextNode;
+            }
+
+            head.next = null;
+            head = prevNode;
+    }
+
+
     public static void main(String[] args) {
         LL list = new LL();
         list.addFirst("a");
@@ -104,12 +126,8 @@ class LL {
 
         list.printList();
 
-        list.deleteFirst();
-        list.printList();
-
-        list.deleteLast();
-        list.printList();
-
         System.out.println(list.getSize());
+        list.reverse_iterate();
+        list.printList();
     }
 }
