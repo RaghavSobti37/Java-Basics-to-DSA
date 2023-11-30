@@ -7,9 +7,10 @@ public class maxcolsum {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int sum = 0;
-		int max = 0;
+		//int max = 0;
         int sum_arr[] = new int[n];
 		int grid[][] = new int[n][n];
+		sc.close();
 		for (int i = 0 ; i < n ; i++){
 			for (int j = 0 ; j < n ; j++){
 				grid[i][j] = sc.nextInt();

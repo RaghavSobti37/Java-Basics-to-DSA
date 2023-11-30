@@ -10,6 +10,7 @@ public class magicalpark {
             int e = sc.nextInt();
             int i = 0;
             int j = 0;
+            sc.close();
 
             char grid[][] = new char[m][n];
             

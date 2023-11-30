@@ -24,6 +24,7 @@ public class kroot {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
+        sc.close();
 
         for (int i = 1; i <= t; i++) {
 			long n = sc.nextLong();

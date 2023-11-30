@@ -4,9 +4,10 @@ public class paratha {
     public static void main(String args[]) {
 		// Cook of rank R can cook 1 paratha in R , next in 2R and so on
 		Scanner sc= new Scanner(System.in);
-		int p = sc.nextInt();
+		// int p = sc.nextInt();
 		int c = sc.nextInt();
 		int rank[] = new int[c];
+		sc.close();
 		for (int i = 0 ; i <c ; i++){
 			rank[i] = sc.nextInt();
 		}
